@@ -12,7 +12,7 @@ const FetchMacPrice = (productUrl) => {
     const firstPrice = priceStrings[0] || "0";
     const normalPrice = parseFloat(firstPrice.replace(/[^0-9.]+/g, ""));
     const sellerInfo = $("#merchant-info").text();
-    const details = $(".a-normal").text();
+    const details = $("#feature-bullets").text();
 
     // Price details
     spinner.succeed(`Fetch price for ${$("title").text().substring(0, 100)} :: ${normalPrice}`);
